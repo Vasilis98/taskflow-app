@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+
+.app-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.main-container {
+    flex: 1;
+    background-color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    background-color: white;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.board {
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.task-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.task-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.task-card__header {
+    margin-bottom: 12px;
+}
+
+.task-card__tag {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.task-card__tag--high {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.task-card__title {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #333;
+}
+
+.task-card__description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.task-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+}
+
+.task-card__date {
+    font-size: 12px;
+    color: #999;
+}
+
+.task-card__btn {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.task-card__btn:hover {
+    background-color: #f5f5f5;
+    border-color: #ccc;
+}
+
