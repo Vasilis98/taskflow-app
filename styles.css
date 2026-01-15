@@ -79,6 +79,16 @@ body {
     color: #c62828;
 }
 
+.task-card__tag--low {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.task-card__tag--medium {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
 .task-card__title {
     margin-top: 8px;
     font-size: 18px;
